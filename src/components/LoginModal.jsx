@@ -34,7 +34,7 @@ export default function LoginModal({ onClose }) {
   };
 
   const handleGoogleLogin = () => {
-    alert('Login com Google em desenvolvimento');
+    alert('Login com Google em desenvolviment');
   };
 
   return (
