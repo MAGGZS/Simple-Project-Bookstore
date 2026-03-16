@@ -42,7 +42,7 @@ export default function LoginModal({ onClose }) {
       <div className="login-modal">
         <button className="login-close" onClick={onClose}>✕</button>
         
-        <h2 className="login-title">Entrar na NeoLivraria</h2>
+        <h2 className="login-title">Entrar na DeskLibre</h2>
         <p className="login-subtitle">Acesse sua conta para continuar</p>
 
         {error && (
