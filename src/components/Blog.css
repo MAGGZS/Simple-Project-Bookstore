@@ -1,0 +1,58 @@
+.blog-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3rem;
+  align-items:start;
+}
+.blog-text p{
+  font-family:'Lora',serif;
+  font-size:.9rem;line-height:1.8;color:#444;margin-bottom:1rem;
+}
+.blog-view-all{
+  font-size:.72rem;
+  text-decoration:underline;
+  display:inline-block;margin-bottom:1.5rem;
+  color:var(--black);
+}
+.blog-view-all:hover{text-decoration:none}
+
+.stack{
+  position:relative;
+  height:460px;
+  min-width:280px;
+}
+.stack-card{
+  position:absolute;
+  width:300px;
+  border:var(--border);
+  background:var(--white);
+  box-shadow:var(--shadow);
+  overflow:hidden;cursor:pointer;
+  transition:transform .22s,box-shadow .22s,z-index 0s;
+}
+.stack-card:nth-child(1){top:0;left:0;z-index:4;transform:rotate(-1.2deg)}
+.stack-card:nth-child(2){top:22px;left:28px;z-index:3;transform:rotate(1.6deg)}
+.stack-card:nth-child(3){top:44px;left:56px;z-index:2;transform:rotate(-2deg)}
+.stack-card:nth-child(4){top:66px;left:84px;z-index:1;transform:rotate(.6deg)}
+.stack-card:hover{
+  z-index:10;
+  transform:rotate(0deg) translate(-3px,-3px) !important;
+  box-shadow:var(--shadow-lg) !important;
+}
+.sk-bar{display:flex;align-items:center;gap:.3rem;padding:.4rem .65rem;background:var(--gray);border-bottom:var(--border-sm)}
+.sk-dot{width:9px;height:9px;border-radius:50%;border:var(--border-sm)}
+.sk-url{font-size:.58rem;color:var(--gray-dk);margin-left:.25rem}
+.sk-cover{
+  height:150px;display:flex;align-items:center;justify-content:center;
+  font-size:4rem;border-bottom:var(--border-sm);
+  position:relative;overflow:hidden;
+}
+.sk-cover::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 4px,rgba(0,0,0,.08) 4px,rgba(0,0,0,.08) 5px)}
+.sk-body{padding:.75rem}
+.sk-date{font-size:.58rem;color:var(--gray-dk);display:block;margin-bottom:.25rem}
+.sk-title{font-family:'Archivo Black',sans-serif;font-size:.88rem;line-height:1.25}
+
+@media(max-width:860px){
+  .blog-grid{grid-template-columns:1fr}
+  .stack{display:none}
+}
