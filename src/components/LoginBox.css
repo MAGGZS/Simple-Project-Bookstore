@@ -72,6 +72,14 @@
   animation: fadeInDown 0.8s ease-out 0.2s both;
 }
 
+.login-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 12px rgba(168, 155, 242, 0.4));
+}
+
 .welcome-text {
   font-size: 13px;
   color: rgba(168, 155, 242, 0.6);
