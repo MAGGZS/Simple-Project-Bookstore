@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import heroImg from '../assets/hero.png';
 import './LoginBox.css';
 
 export default function LoginBox() {
@@ -34,6 +35,7 @@ export default function LoginBox() {
 
         <div className="login-content">
           <div className="title-container">
+            <img src={heroImg} alt="RootRPG" className="login-logo" />
             <div className="welcome-text">Bem-vindo de volta!</div>
             <div className="title-main">Faça o login</div>
           </div>
