@@ -75,14 +75,6 @@
   .project-title { font-size: 48px; }
 }
 @media (max-width: 768px) {
-  .info-section { min-height: auto; padding: 48px 32px; align-items: flex-start; }
-  .project-title { font-size: 36px; margin-bottom: 10px; }
-  .project-description { margin-bottom: 24px; font-size: 14px; }
-  .feature-item { font-size: 12px; }
+  .info-section { display: none; }
 }
-@media (max-width: 480px) {
-  .info-section { padding: 36px 24px; }
-  .project-title { font-size: 30px; }
-  .project-description { font-size: 13px; line-height: 1.7; }
-  .feature-item { font-size: 11px; }
-}
+
